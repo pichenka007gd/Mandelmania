@@ -64,7 +64,7 @@ while True:
 
 	for event in pg.event.get():
 		if event.type == pg.QUIT:
-			exit()
+			raise SystemExit
 
 	if old_WIDTH != WIDTH or old_HEIGHT != HEIGHT:
 		old_WIDTH, old_HEIGHT = sc.get_size()

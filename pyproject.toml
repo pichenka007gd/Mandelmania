@@ -1,0 +1,14 @@
+[project]
+name = "mandelmania"
+version = "1.0.0"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+    "numba>=0.68.0",
+    "numpy>=2.4.6",
+    "pygame>=2.6.1",
+]
+
+[dependency-groups]
+dev = [
+    "pyinstaller>=6.22.3",
+]
