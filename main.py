@@ -89,7 +89,8 @@ while True:
 
 	img2arr = f.render(img2arr, mx, my)
 
-	pg.surfarray.blit_array(sc, img2arr)
+	pg.surfarray.blit_array(img, img2arr)
+	sc.blit(pg.transform.scale(img, sc.get_size()), (0, 0))
 
 	pg.display.set_caption(str(round(clock.get_fps())))
 	pg.display.flip()
